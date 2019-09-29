@@ -1,0 +1,52 @@
+/*
+*   @summary Horizontal List
+    @use horizontal-list()
+    @author Danish 
+ */
+@mixin horizontal-list() {
+    
+}
+
+
+@mixin absolute-center() {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// @import "mixins/media-queries";
+// @import "mixins/sprite-generator";
+// @mixin main-box-shadow() {
+// 	@include box-shadow( 2px 5px 4px rgba(#000, 0.15));
+// }
+
+// @mixin rgba-background($color){
+//     @include filter-gradient($color, $color);
+//     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 or $legacy-support-for-ie8 {
+//         background: transparent;
+ 
+//         // set filter as none for IE9+, because IE9+ supprot RGBa
+//         :root & {
+//         filter: none\0/IE9;}
+//     }
+//     background: $color;
+// }
+// usage 
+// .blackAlpha50 {
+//     @include rgba-background(rgba(0, 0, 0, .5));
+// }
+
+
+
+// @mixin main-box-shadow() { 
+//     @include box-shadow(0 0 4px rgba(#000, 0.7)); 
+// }
+
+
+// @mixin firefox-message($selector) {
+//   body.firefox #{$selector}:before {
+//     content: "Hi, Firefox users!";
+//   }
+// }
+// @include firefox-message(".header");

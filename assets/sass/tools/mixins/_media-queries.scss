@@ -1,0 +1,56 @@
+/*************************************danish mobile media queries*/
+$crappy-android: emCalc(240px);
+$iphone-portrait: emCalc(320px);
+$iphone-landscape: emCalc(480px);
+$ipad-portrait: emCalc(768px);
+$ipad-landscape: emCalc(1024px);
+$desktop: emCalc(1224px);
+$desktop-large: emCalc(1824px);
+
+@mixin respond-to($media) {
+    // crappy-android
+    @if $media == 'crappy-android' {
+        @media only screen and (max-width: $crappy-android)    
+        { @content; }
+    }
+    // iphone-portrait
+    @else if $media == 'iphone-portrait' {
+        @media only screen and (max-width: $iphone-portrait)
+        { @content; }
+    }
+    // iphone-landscape
+    @else if $media == 'iphone-landscape' {
+        @media only screen and (max-width: $iphone-landscape) and (orientation : landscape) 
+        { @content; }
+    }
+    // ipad-portrait
+    @else if $media == 'ipad-portrait' {
+        @media only screen and (max-width: $ipad-portrait) 
+        { @content; }
+    }
+    // ipad-landscape
+    @else if $media == 'ipad-landscape' {
+        @media only screen and (max-device-width : $ipad-landscape) and (orientation : landscape) 
+        { @content; }
+    }
+    //iphone specific
+    @else if $media == 'iphone' {
+        @media only screen and (min-width: $iphone-portrait) and (max-width: $iphone-landscape) 
+        { @content; }
+    }
+    //ipad specific
+    @else if $media == 'ipad' {
+        @media only screen and (min-width: $ipad-portrait) and (max-width: $ipad-landscape)
+        { @content; }
+    }  
+    //desktop and laptop screen
+    @else if $media == 'desktop' {
+        @media only screen and (min-width: $desktop) 
+        { @content; }
+    }
+    //large desktop screen
+    @else if $media == 'desktop-large' {
+        @media only screen and (min-width : $desktop-large)
+        { @content; }
+    }
+}

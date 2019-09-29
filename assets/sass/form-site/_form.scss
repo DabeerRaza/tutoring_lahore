@@ -1,0 +1,92 @@
+.l-header {
+    .l-header--form-container {
+        margin-top: 180px;
+        .is-wrapper {
+            padding: 3px 0px;
+            .list-inline {
+                border-top: 2px solid $primaryClr;
+                border-bottom: 2px solid $primaryClr;
+                .list-item {
+                    list-style: none;
+                }
+            }
+            img {
+                margin-top: 25px;
+            }
+            button {
+                margin-top: 25px;
+                margin-left: 10px;
+                background: transparent;
+                border: 2px solid $primaryClr;
+                border-radius: 2px;
+                padding: 4px 20px;
+            }
+            button:focus {
+                outline: none !important;
+                border: 1px solid $primaryClr;
+                box-shadow: 0 0 10px $primaryClr;
+            }
+            input,
+            textarea {
+                margin-bottom: 20px;
+                padding-left: 20px;
+                height: 45px;
+                background-color: #8c8d8c;
+                border: 0px solid #8c8d8c;
+                color: black;
+                &:focus {
+                    background: wheat;
+                    outline: none !important;
+                    border: 1px solid $primaryClr;
+                    box-shadow: 0 0 10px $primaryClr;
+                }
+            }
+            .hexa-icon {
+                background: url(assets/img/btn_hexagon.svg) no-repeat center center;
+                height: 50px;
+                display: inline-block;
+                -webkit-transform: scale(0.85);
+                transform: scale(0.85);
+                position: relative;
+                top: 0px;
+                /* background: rgba(0,5,28,0.5); */
+                margin-left: -88px;
+                margin-top: -3px;
+            }
+            .brd-botm {
+                border-bottom: 2px solid $primaryClr;
+            }
+        }
+        .has__received--info {
+            p {
+                font-size: 18px;
+                em {
+                    color: $primaryClr;
+                }
+            }
+        }
+        #popup_bg {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            display: none;
+            #popup_main_div {
+                height: 650px;
+                background-color: rgba(3, 3, 3, 0.6);
+                border-radius: 5px;
+                margin-top: -180px;
+                #close_popup_div {
+                    p {
+                        color: $primaryClr;
+                        cursor: pointer;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+                .mt-60 {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}

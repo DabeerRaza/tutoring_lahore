@@ -1,0 +1,97 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+@supports( display:flex ) {
+	display: flex;
+	// flex-wrap: wrap;
+	// flex-direction: row-reverse;
+}
+
+@supports not ( display:flex ) {
+	display: -webkit-box;
+	// flex-wrap: wrap;
+	// flex-direction: row-reverse;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	&.is-mobile-nav-open {
+		margin: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+	.container {
+		// @media screen and (max-width: 1370px) {
+		// 	width: 1200px;
+		// }
+		// @media screen and (max-width: 1200px) {
+		// 	width: 100%;
+		// 	overflow: hidden;
+		// }
+	}
+	&.single-accomplishment {
+        @media screen and (max-width: 830px) {
+        	.l-header {
+        		position: relative;
+        	}
+        	.l-header--logo {
+        		color: #000;
+        	}
+        }
+	} 
+}
+
+// 1370 = 1200px
+// 1200 = 1000
+
+img {
+    // border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//     color: #484747;
+// }
+
+
+// html {
+// 	box-sizing: border-box;
+// }
+
+// *,
+// *:before,
+// *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+// 	box-sizing: inherit;
+// }
+
+// body {
+// 	//background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+// }
+
+// blockquote, q {
+// 	quotes: "" "";
+
+// 	&:before,
+// 	&:after {
+// 		content: "";
+// 	}
+// }
+
+// hr {
+// 	background-color: $color__background-hr;
+// 	border: 0;
+// 	height: 1px;
+// 	margin-bottom: 1.5em;
+// }
+
+// @import "lists";
+
+// img {
+// 	height: auto; /* Make sure images are scaled correctly. */
+// 	max-width: 100%; /* Adhere to container width. */
+// }
+
+// @import "tables";

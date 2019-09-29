@@ -1,0 +1,20 @@
+{
+  "name": "logo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "yeoman <idanishraza@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

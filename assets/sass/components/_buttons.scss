@@ -1,0 +1,58 @@
+.btn-search {
+ 	padding: 2rem;
+ 	background: transparent;
+}
+
+.btn-green {
+	background: linear-gradient(to bottom, #47c25b, #318c40 );
+	color: #FFF;
+    padding: 13px 30px;
+	border: none;
+    font-size: 20px;
+	width: 142px;
+	height: 51px;
+	&:focus,
+	&:hover {
+		background: #47c25b;
+	}
+ //    @include media-breakpoint-down(md) {
+	// 	padding: 5px 19px;
+	// 	font-size: 18px;
+	// 	line-height: 1.7;
+	// 	width: 120px;
+	// 	height: 40px;
+	// }
+}
+
+.btn-purple {
+    background: #7c267c;
+    color: #FFF;
+    padding: 9px 21px;
+    font-weight: bold;
+	&:hover {
+		color: #FFF;
+		background: darken(#7c267c, 15%);
+	}
+}
+
+
+.btn-hallow {
+    background: transparent;
+    color: #FFF;
+}
+
+// input.wpcf7-form-control.wpcf7-submit.btn.btn-mail {
+//     font-size: 14px;
+//     font-weight: bold;
+//     width: 110px;
+//     text-transform: uppercase;
+// }
+
+// .sites-button {
+//   background: #FF6908;
+//   font-size: 1.25rem;
+//   font-weight: bold;
+//   box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+//   border-radius: 3px;
+//   border: none;
+// }
